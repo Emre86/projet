@@ -1,0 +1,6 @@
+Author:Emre Gun
+
+Utilisation:
+./srm -h pour l aide
+./srm -f pour supprimer un fichier
+./srm -d pour la suppresion d un repertoire recursivement

@@ -1,0 +1,76 @@
+Projet PSAR : Gestionnaire de processus répartis
+
+
+Il s'agit d'un gestionnaire de processus répartis.
+On dispose d'un serveur local et de serveur distants.
+On lance des processus sur les seuveurs distants et on peut 
+voir a partir du serveur local et de la commande rps 
+l'execution des processus répartis.
+
+
+
+/*************************
+ *   MODE D'EMPLOI       *
+ *************************/
+ 
+ A - Modifier un programme de test existant
+ --------------------------------------
+ 
+ Les sources du jeu de test sont dans "src_C/test_C"
+
+ 
+ 
+ B - Préparation d'un nouveau programme de test
+ ----------------------------------
+ 
+ (1) insérer "librproc.h"
+ (2) utiliser les fonctions (cf ci-dessous)
+ (3) compiler en incluant la librairie librproc.a (cf Makefile)
+ 
+ 
+ 
+
+
+/*************************
+ *   FONCTIONNALITES     *
+ *************************/
+ 
+/* *
+ * Execution sur une machine choisie en round-robin 
+ */
+int rexecut(t_uid *uid, char *exec);
+
+/* *
+ * Execution sur une machine passée en argument, 
+ * par exemple ari-31-303-05
+ */
+int rexec(t_uid *uid, char *exec, char *machine);
+
+/* *
+ * Attente d'un processus réparti
+ */
+int rwait(int *status);
+
+/* *
+ * Attente du processus réparti d'uid uid 
+ */
+int rwaituid(t_uid uid, int *status);
+
+/* *
+ * Envoi du signal sig au processus d'uid uid 
+ */
+int rkill(t_uid uid, int sig);
+
+
+/**************************
+ *     COMMANDE           *
+ **************************/
+ 
+ Afficher les processus répartis du système :
+ 
+ ./bin/rps
+ 
+ 
+
+
+

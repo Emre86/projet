@@ -1,0 +1,8 @@
+Exract the files and place in the corresponding folder (inside Eclipse project):
+ReadMeFirst: this file
+
+/src/com.exercise.AndroidList/AndroidList.java
+/res/layout/row.xml
+/res/drawable/icongray.png - as a sample icon for Monday to Saturday. The green icon can use the original icon come from Project Wizard.
+
+

@@ -1,0 +1,16 @@
+Author: Emre Gun
+
+Ce projet permet à plusieurs personne de pouvoir communiquer en passant 
+par un serveur de tchat. Toutes les personnes connecté au seuveur peuvent lire 
+les message envoyés par d'autres personnes connectés. 
+
+Pour démarrer le serveur on doit faire :
+
+java ChatServer 8000
+
+Dans l'exemple ici 8000 représente le numero de port
+
+Un client se connecte en effectuant:
+
+java Telnet localhost 8000 login
+

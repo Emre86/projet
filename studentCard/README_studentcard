@@ -1,0 +1,25 @@
+Author: Emre Gun
+
+Il s'agit d'un projet sur carte à puce.
+On dispose d'un émulateur virtuelle de carte a puce.
+Il y d'une part le code stocké dans la carte à puce.
+Il y a d'autre part le code exécuté dans l'émulateur.
+Dans notre cas il s'agit d'une carte étudiante effectuant plusieurs 
+fonctionnalités parmi lesquels:
+
+
+"14: update the DES key within the card" 
+"13: uncipher a file by the card"
+"12: cipher a file by the card" 
+"11: cipher and uncipher a name by the card" 
+"10: read a file from the card" 
+"9: write a file to the card" 
+"8: update WRITE_PIN" 
+"7: update READ_PIN"
+"6: display PIN security status"
+"5: desactivate/activate PIN security" 
+"4: enter READ_PIN" 
+"3: enter WRITE_PIN"
+"2: read a name from the card" 
+"1: write a name to the card" 
+"0: exit"

@@ -1,0 +1,14 @@
+Author:Emre Gun
+
+srm est un programme permettant l'effacement 
+sécurisé de fichier ou de répertoire.
+Il y a une ecriture successive des 00 , FF et de random 
+dans les fichiers. Le nom des fichiers sont modifiés avant 
+leur suppression.
+
+
+
+Utilisation:
+./srm -h pour l aide
+./srm -f pour supprimer un fichier
+./srm -d pour la suppresion d un repertoire recursivement

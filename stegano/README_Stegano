@@ -1,0 +1,24 @@
+Author: Emre Gun
+Utilisation 
+
+Nous disposons de deux commandes: stegano et recover.
+La commande stegano permet de "cacher" un texte dans une
+image ppm. La commande recover permet de retrouver le fichier 
+cacher dans une image.
+
+
+
+
+Pour compiler:
+$> make -f Makefile_stegano
+$> make -f Makefile_recover
+
+Pour nettoyer 
+$> make clean
+
+Pour tester les executables
+$/bin> ./stegano image_source.ppm image_dest.ppm texte_a_cacher.txt
+$/bin> ./recover image_a_decoder texte_obtenue.txt
+
+ 
+

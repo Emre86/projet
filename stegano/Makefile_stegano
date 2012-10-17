@@ -1,0 +1,22 @@
+CC=gcc
+CFLAGS= -Wall -ansi -pedantic
+INCDIR=include
+LDFLAGS=
+OBJDIR=obj
+SRCDIR=src
+BINDIR=bin
+
+$(OBJDIR)/%.o: $(SRCDIR)/%.c $(INCDIR)/image.h
+	$(CC) -c -o $@ $< $(CFLAGS) -I $(INCDIR)
+
+
+
+$(BINDIR)/stegano: $(OBJDIR)/init_pixel.o $(OBJDIR)/stegano.o $(OBJDIR)/main_stegano.o
+	gcc -o $@ $^ $(CFLAGS)
+
+
+clean:
+	rm -f  $(OBJDIR)/*.o $(SRCDIR)/*~ $(BINDIR)/*
+
+mrproper: clean
+	rm $(EXEC)
